@@ -17,7 +17,7 @@ Tako double zasede 8 bajtov pomnilnika
 
 To nam pove, da lahko NaN preverjamo tudi na bitnem nivoju.<br>
 Prvi pogoj (eksponent):<br>
-**Če so v eksponentu same 1 kot je zgoraj. Potem gre za "special value"** 
+**Če so v eksponentu same 1 kot je spodaj. Potem gre za "special value"** 
 Drugi pogoj (mantissa):<br>
 Pri shranjeni vrednosti **NaN** mantissa != 0<br>
 Če pa mantissa == 0 potem je vrednost Infinity. **Double ima še več "special values"**<br>
