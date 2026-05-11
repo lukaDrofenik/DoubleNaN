@@ -1,9 +1,9 @@
 # DoubleNaN
 V tej nalogi se osredotočamo na NaN vrednost v podatkovnem tipu Double. V jezikih C# in C++
 
-V osnovi NaN ni enako NaN, zako `NaN == NaN -> False`<br>
+V osnovi NaN ni enako NaN, zato `NaN == NaN -> False`<br>
 Tako je definirano po IEEE 754 standardu.<br>
-Razlog: NaN predstavlja neveljaven/nerazločen rezultat (npr. 0/0, sqrt(-1)). Če bi NaN ravnal kot katerakoli konkretna vrednost, bi to lahko zavajalo pri detekciji napak in propagaciji neveljavnih rezultatov, zato standard zahteva, da primerjava vrne false za enakost. <br>
+Razlog: NaN predstavlja neveljaven/nerazločen rezultat (npr. 0/0, sqrt(-1)). Če bi NaN ravnal kot katerakoli konkretna vrednost, bi to lahko zavajalo pri detekciji napak in neveljavnih rezultatov, zato standard zahteva, da primerjava vrne false za enakost. <br>
 Zato ima C# funkcijo `double.IsNaN()`, <br>
 C++ pa z `#include <math.h>` dobi funkcijo isNaN()<br>
 Deklaracija: C#: `double st = double.NaN;`,<br>
